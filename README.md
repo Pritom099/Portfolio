@@ -1,25 +1,54 @@
 # Shatabdee Paul — Portfolio
 
-A responsive personal portfolio built with semantic HTML and custom CSS. It features a profile photo, project cards with category filters, an about section, technical skills, and contact links.
+A personal portfolio highlighting my computer science studies, interests in backend engineering, and selected software projects.
 
-## Live site
+**Live site:** [pritom099.github.io/Portfolio](https://pritom099.github.io/Portfolio/)
 
-https://pritom099.github.io/Portfolio/
+## Features
+
+- Responsive layout for desktop, tablet, and mobile
+- Profile photo and introductory hero section
+- Project cards with category filters
+- About, technical skills, and build approach sections
+- Mobile navigation and accessible in-page links
+- GitHub Pages deployment through GitHub Actions
+
+## Featured projects
+
+- **Distributed KV Store** — a Go key-value store exploring Raft consensus and fault tolerance
+- **Compiler Frontend** — a C++ lexer and parser that generates abstract syntax trees
+- **Daily Task Tracker** — a small browser-based to-do list built with HTML, CSS, and JavaScript
+
+## Built with
+
+- HTML
+- CSS
+- JavaScript
 
 ## Run locally
 
-Open `index.html` in a browser. The portfolio does not require a build step or package installation.
+No build tools or package installation are required. Clone the repository and open `index.html` in a browser.
 
-## Project files
+```bash
+git clone https://github.com/Pritom099/Portfolio.git
+cd Portfolio
+```
 
-- `index.html` — page content and project-filter interaction
-- `style.css` — responsive layout, colors, and component styles
-- `images/shatabdee-profile.jpeg` — profile photo used in the hero and navigation
+## Deployment
 
-## Deploy to GitHub Pages
+The workflow at `.github/workflows/pages.yml` deploys the site to GitHub Pages when changes are pushed to `main`.
 
-The workflow in `.github/workflows/pages.yml` enables GitHub Pages and publishes the site when changes are pushed to the `main` branch.
+## Project structure
 
-## Customize
+```text
+.
+├── .github/workflows/pages.yml
+├── images/shatabdee-profile.jpeg
+├── index.html
+├── README.md
+└── style.css
+```
 
-Update the project details, contact address, and social links in `index.html`. Replace the profile photo at `images/shatabdee-profile.jpeg` to use another image.
+## Customization
+
+Update the project details, contact address, and social links in `index.html`. Replace `images/shatabdee-profile.jpeg` to use a different profile photo.
