@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shatabdee | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background border-b border-subtle h-16">
+<div class="flex justify-between items-center max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop h-full">
+<a class="font-label-caps text-label-caps font-bold tracking-widest text-white" href="#">
+                Shatabdee Paul
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200 ease-in-out" href="#projects">Projects</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200 ease-in-out" href="#skills">Skills</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200 ease-in-out" href="#about">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200 ease-in-out" href="#contact">Contact</a>
+<a class="ml-4 px-4 py-2 bg-white text-black font-body-md text-body-md rounded hover:bg-gray-200 transition-colors" href="#">
+                    Resume
+                </a>
+</div>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto w-full grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<!-- Hero Section -->
+<section class="col-span-4 md:col-span-12 min-h-[60vh] flex flex-col justify-center border-b border-subtle pb-24 mb-24 relative overflow-hidden">
+<div class="z-10 w-full md:w-3/4">
+<p class="font-code-sm text-code-sm text-accent-blue mb-4">Hello, World. I am</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">
+                    Shatabdee Paul.
+                </h1>
+<p class="font-code-sm text-code-sm text-on-surface-variant md:text-lg mb-12 border-l-2 border-accent-blue pl-4">
+                    Building digital systems with architectural precision. <br/>
+                    Computer Science Student.
+                </p>
+<a class="inline-flex items-center gap-2 border border-subtle bg-surface-variant text-white px-6 py-3 font-label-caps text-label-caps hover-electric group" href="#projects">
+<span>EXPLORE_PROJECTS</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Decorative structural grid background -->
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(#2A2A2A 1px, transparent 1px), linear-gradient(90deg, #2A2A2A 1px, transparent 1px); background-size: 64px 64px;"></div>
+</section>
+<!-- Projects Section -->
+<section class="col-span-4 md:col-span-12 mb-32" id="projects">
+<h2 class="font-label-caps text-label-caps text-accent-blue mb-12 tracking-widest uppercase border-b border-subtle pb-4">01. Architecture_&amp;_Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project Card 1 -->
+<div class="digital-border bg-surface-variant p-8 hover-electric flex flex-col h-full relative group">
+<div class="absolute top-0 right-0 p-4 opacity-50">
+<span class="material-symbols-outlined font-light text-4xl">dns</span>
+</div>
+<div class="mb-auto">
+<h3 class="font-headline-md text-headline-md text-white mb-4">Distributed KV Store</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A fault-tolerant, distributed key-value store implemented in Go using the Raft consensus algorithm. Designed for high availability and partition tolerance.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="chip">Go</span>
+<span class="chip">Raft</span>
+<span class="chip">RPC</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-code-sm text-code-sm text-white group-hover:text-accent-blue transition-colors mt-4" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span>
+                        View Repository
+                    </a>
+</div>
+<!-- Project Card 2 -->
+<div class="digital-border bg-surface-variant p-8 hover-electric flex flex-col h-full relative group">
+<div class="absolute top-0 right-0 p-4 opacity-50">
+<span class="material-symbols-outlined font-light text-4xl">account_tree</span>
+</div>
+<div class="mb-auto">
+<h3 class="font-headline-md text-headline-md text-white mb-4">Compiler Frontend</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">A lexical analyzer and parser for a subset of C, built from scratch in C++. Generates Abstract Syntax Trees (AST) and performs basic semantic analysis.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="chip">C++</span>
+<span class="chip">Flex/Bison</span>
+<span class="chip">AST</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-code-sm text-code-sm text-white group-hover:text-accent-blue transition-colors mt-4" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span>
+                        View Repository
+                    </a>
+</div>
+</div>
+</section>
+<!-- Skills & About Grid Container -->
+<div class="col-span-4 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-gutter mb-32 border-t border-subtle pt-24">
+<!-- About Section -->
+<section class="md:col-span-7 pr-0 md:pr-12 border-r-0 md:border-r border-subtle" id="about">
+<h2 class="font-label-caps text-label-caps text-accent-blue mb-8 tracking-widest uppercase">02. System_Parameters</h2>
+<div class="font-body-lg text-body-lg text-on-surface-variant space-y-6">
+<p>
+                        I approach software engineering as digital architecture. My focus is on designing systems that are not just functional, but robust, scalable, and elegantly structured.
+                    </p>
+<p>
+                        Currently completing my B.S. in Computer Science, I specialize in backend infrastructure and distributed systems. I believe that clean code is a prerequisite for reliable software, and I value deep understanding of fundamental principles over fleeting framework trends.
+                    </p>
+<div class="p-6 bg-surface-variant digital-border mt-8">
+<p class="font-code-sm text-code-sm text-white">
+<span class="text-accent-blue">&gt;</span> Status: Seeking Summer 2025 Backend Engineering Internships. <span class="animate-pulse">_</span>
+</p>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="md:col-span-5 pt-12 md:pt-0 pl-0 md:pl-12" id="skills">
+<h2 class="font-label-caps text-label-caps text-accent-blue mb-8 tracking-widest uppercase">03. Technical_Stack</h2>
+<div class="space-y-8">
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-4 border-b border-subtle pb-2">LANGUAGES</h4>
+<div class="flex flex-wrap gap-2">
+<span class="chip">Python</span>
+<span class="chip">C/C++</span>
+<span class="chip">Go</span>
+<span class="chip">TypeScript</span>
+<span class="chip">Java</span>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-4 border-b border-subtle pb-2">INFRASTRUCTURE &amp; TOOLS</h4>
+<div class="flex flex-wrap gap-2">
+<span class="chip">Docker</span>
+<span class="chip">Kubernetes</span>
+<span class="chip">Linux/Unix</span>
+<span class="chip">Git</span>
+<span class="chip">AWS</span>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-4 border-b border-subtle pb-2">CONCEPTS</h4>
+<div class="flex flex-wrap gap-2">
+<span class="chip">Distributed Systems</span>
+<span class="chip">OS Internals</span>
+<span class="chip">Algorithms</span>
+<span class="chip">Database Design</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Contact Section -->
+<section class="col-span-4 md:col-span-12 flex flex-col items-center justify-center py-24 text-center" id="contact">
+<h2 class="font-label-caps text-label-caps text-accent-blue mb-6 tracking-widest uppercase">04. Initiate_Connection</h2>
+<h3 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-8">Get In Touch</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-12">
+                Whether you have a question or just want to say hi, my inbox is open. I'll try my best to get back to you.
+            </p>
+<a class="bg-white text-black font-label-caps text-label-caps px-8 py-4 rounded-none hover:bg-gray-200 transition-colors inline-block uppercase tracking-wider" href="mailto:hello@example.com">
+                Send Email
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full py-12 border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-max-width mx-auto px-margin-desktop gap-gutter">
+<p class="font-code-sm text-code-sm text-on-surface dark:text-on-surface">© 2026 Shatabdee  . Built with precision.</p>
+<div class="flex gap-6">
+<a class="font-code-sm text-code-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">GitHub</a>
+<a class="font-code-sm text-code-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">LinkedIn</a>
+<a class="font-code-sm text-code-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Source Code</a>
+</div>
+</div>
+</footer>
+</body></html>
