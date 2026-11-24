@@ -1,176 +1,239 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Shatabdee | Portfolio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="style.css"
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111014">
+  <meta name="description" content="Shatabdee Paul is a computer science student focused on backend engineering and distributed systems.">
+  <title>Shatabdee Paul — Computer Science Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-background border-b border-subtle h-16">
-<div class="flex justify-between items-center max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop h-full">
-<a class="font-label-caps text-label-caps font-bold tracking-widest text-white" href="#">
-                Shatabdee Paul
-            </a>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200 ease-in-out" href="#projects">Projects</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200 ease-in-out" href="#skills">Skills</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200 ease-in-out" href="#about">About</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-colors duration-200 ease-in-out" href="#contact">Contact</a>
-<a class="ml-4 px-4 py-2 bg-white text-black font-body-md text-body-md rounded hover:bg-gray-200 transition-colors" href="#">
-                    Resume
-                </a>
-</div>
-<button class="md:hidden text-white">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
-<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto w-full grid grid-cols-4 md:grid-cols-12 gap-gutter">
-<!-- Hero Section -->
-<section class="col-span-4 md:col-span-12 min-h-[60vh] flex flex-col justify-center border-b border-subtle pb-24 mb-24 relative overflow-hidden">
-<div class="z-10 w-full md:w-3/4">
-<p class="font-code-sm text-code-sm text-accent-blue mb-4">Hello, World. I am</p>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">
-                    Shatabdee Paul.
-                </h1>
-<p class="font-code-sm text-code-sm text-on-surface-variant md:text-lg mb-12 border-l-2 border-accent-blue pl-4">
-                    Building digital systems with architectural precision. <br/>
-                    Computer Science Student.
-                </p>
-<a class="inline-flex items-center gap-2 border border-subtle bg-surface-variant text-white px-6 py-3 font-label-caps text-label-caps hover-electric group" href="#projects">
-<span>EXPLORE_PROJECTS</span>
-<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<!-- Decorative structural grid background -->
-<div class="absolute inset-0 z-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(#2A2A2A 1px, transparent 1px), linear-gradient(90deg, #2A2A2A 1px, transparent 1px); background-size: 64px 64px;"></div>
-</section>
-<!-- Projects Section -->
-<section class="col-span-4 md:col-span-12 mb-32" id="projects">
-<h2 class="font-label-caps text-label-caps text-accent-blue mb-12 tracking-widest uppercase border-b border-subtle pb-4">01. Architecture_&amp;_Projects</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Project Card 1 -->
-<div class="digital-border bg-surface-variant p-8 hover-electric flex flex-col h-full relative group">
-<div class="absolute top-0 right-0 p-4 opacity-50">
-<span class="material-symbols-outlined font-light text-4xl">dns</span>
-</div>
-<div class="mb-auto">
-<h3 class="font-headline-md text-headline-md text-white mb-4">Distributed KV Store</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">A fault-tolerant, distributed key-value store implemented in Go using the Raft consensus algorithm. Designed for high availability and partition tolerance.</p>
-<div class="flex flex-wrap gap-2 mb-8">
-<span class="chip">Go</span>
-<span class="chip">Raft</span>
-<span class="chip">RPC</span>
-</div>
-</div>
-<a class="inline-flex items-center gap-2 font-code-sm text-code-sm text-white group-hover:text-accent-blue transition-colors mt-4" href="#">
-<span class="material-symbols-outlined text-[18px]">code</span>
-                        View Repository
-                    </a>
-</div>
-<!-- Project Card 2 -->
-<div class="digital-border bg-surface-variant p-8 hover-electric flex flex-col h-full relative group">
-<div class="absolute top-0 right-0 p-4 opacity-50">
-<span class="material-symbols-outlined font-light text-4xl">account_tree</span>
-</div>
-<div class="mb-auto">
-<h3 class="font-headline-md text-headline-md text-white mb-4">Compiler Frontend</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">A lexical analyzer and parser for a subset of C, built from scratch in C++. Generates Abstract Syntax Trees (AST) and performs basic semantic analysis.</p>
-<div class="flex flex-wrap gap-2 mb-8">
-<span class="chip">C++</span>
-<span class="chip">Flex/Bison</span>
-<span class="chip">AST</span>
-</div>
-</div>
-<a class="inline-flex items-center gap-2 font-code-sm text-code-sm text-white group-hover:text-accent-blue transition-colors mt-4" href="#">
-<span class="material-symbols-outlined text-[18px]">code</span>
-                        View Repository
-                    </a>
-</div>
-</div>
-</section>
-<!-- Skills & About Grid Container -->
-<div class="col-span-4 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-gutter mb-32 border-t border-subtle pt-24">
-<!-- About Section -->
-<section class="md:col-span-7 pr-0 md:pr-12 border-r-0 md:border-r border-subtle" id="about">
-<h2 class="font-label-caps text-label-caps text-accent-blue mb-8 tracking-widest uppercase">02. System_Parameters</h2>
-<div class="font-body-lg text-body-lg text-on-surface-variant space-y-6">
-<p>
-                        I approach software engineering as digital architecture. My focus is on designing systems that are not just functional, but robust, scalable, and elegantly structured.
-                    </p>
-<p>
-                        Currently completing my B.S. in Computer Science, I specialize in backend infrastructure and distributed systems. I believe that clean code is a prerequisite for reliable software, and I value deep understanding of fundamental principles over fleeting framework trends.
-                    </p>
-<div class="p-6 bg-surface-variant digital-border mt-8">
-<p class="font-code-sm text-code-sm text-white">
-<span class="text-accent-blue">&gt;</span> Status: Seeking Summer 2025 Backend Engineering Internships. <span class="animate-pulse">_</span>
-</p>
-</div>
-</div>
-</section>
-<!-- Skills Section -->
-<section class="md:col-span-5 pt-12 md:pt-0 pl-0 md:pl-12" id="skills">
-<h2 class="font-label-caps text-label-caps text-accent-blue mb-8 tracking-widest uppercase">03. Technical_Stack</h2>
-<div class="space-y-8">
-<div>
-<h4 class="font-label-caps text-label-caps text-white mb-4 border-b border-subtle pb-2">LANGUAGES</h4>
-<div class="flex flex-wrap gap-2">
-<span class="chip">Python</span>
-<span class="chip">C/C++</span>
-<span class="chip">Go</span>
-<span class="chip">TypeScript</span>
-<span class="chip">Java</span>
-</div>
-</div>
-<div>
-<h4 class="font-label-caps text-label-caps text-white mb-4 border-b border-subtle pb-2">INFRASTRUCTURE &amp; TOOLS</h4>
-<div class="flex flex-wrap gap-2">
-<span class="chip">Docker</span>
-<span class="chip">Kubernetes</span>
-<span class="chip">Linux/Unix</span>
-<span class="chip">Git</span>
-<span class="chip">AWS</span>
-</div>
-</div>
-<div>
-<h4 class="font-label-caps text-label-caps text-white mb-4 border-b border-subtle pb-2">CONCEPTS</h4>
-<div class="flex flex-wrap gap-2">
-<span class="chip">Distributed Systems</span>
-<span class="chip">OS Internals</span>
-<span class="chip">Algorithms</span>
-<span class="chip">Database Design</span>
-</div>
-</div>
-</div>
-</section>
-</div>
-<!-- Contact Section -->
-<section class="col-span-4 md:col-span-12 flex flex-col items-center justify-center py-24 text-center" id="contact">
-<h2 class="font-label-caps text-label-caps text-accent-blue mb-6 tracking-widest uppercase">04. Initiate_Connection</h2>
-<h3 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-8">Get In Touch</h3>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-12">
-                Whether you have a question or just want to say hi, my inbox is open. I'll try my best to get back to you.
-            </p>
-<a class="bg-white text-black font-label-caps text-label-caps px-8 py-4 rounded-none hover:bg-gray-200 transition-colors inline-block uppercase tracking-wider" href="mailto:hello@example.com">
-                Send Email
-            </a>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full py-12 border-t border-outline-variant">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-max-width mx-auto px-margin-desktop gap-gutter">
-<p class="font-code-sm text-code-sm text-on-surface dark:text-on-surface">© 2026 Shatabdee  . Built with precision.</p>
-<div class="flex gap-6">
-<a class="font-code-sm text-code-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">GitHub</a>
-<a class="font-code-sm text-code-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">LinkedIn</a>
-<a class="font-code-sm text-code-sm text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Source Code</a>
-</div>
-</div>
-</footer>
-</body></html>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Shatabdee Paul, home">
+        <img class="brand-photo" src="images/shatabdee-profile.jpeg" alt="">
+        <span>Shatabdee Paul</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Request resume <span aria-hidden="true">↗</span></a>
+      </nav>
+      <details class="mobile-menu">
+        <summary aria-label="Toggle navigation menu"><span></span><span></span></summary>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Request resume ↗</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE STUDENT <span class="eyebrow-divider">/</span> BACKEND ENGINEERING</p>
+        <h1 id="hero-title">Thoughtful code.<br><span>Resilient systems.</span></h1>
+        <p class="hero-intro">Hi, I’m Shatabdee — I build dependable software and enjoy getting to the heart of how systems work.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#about">A little about me <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>Curious by nature. Precise by design.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="art-glow"></div>
+        <div class="portrait-frame">
+          <img class="portrait-photo" src="images/shatabdee-profile.jpeg" alt="Shatabdee Paul outdoors in a garden" width="632" height="1152" fetchpriority="high">
+        </div>
+        <div class="art-caption"><span>SHATABDEE PAUL</span><span>COMPUTER SCIENCE</span></div>
+        <span class="art-star star-one" aria-hidden="true">✳</span>
+        <span class="art-star star-two" aria-hidden="true">✳</span>
+      </div>
+      <a class="scroll-cue" href="#projects"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section-wrap projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK <span class="eyebrow-divider">/</span> 01—03</p><h2 id="projects-title">Projects with purpose.</h2></div>
+        <p class="section-aside">A mix of systems, language tooling, and a small web app.</p>
+      </div>
+      <div class="project-filters" role="group" aria-label="Filter projects" hidden>
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work <span>3</span></button>
+        <button class="filter-button" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+        <button class="filter-button" type="button" data-filter="language-tools" aria-pressed="false">Language tools</button>
+        <button class="filter-button" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+        <p class="filter-status" id="project-filter-status" aria-live="polite">3 projects shown</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-card-lilac" data-category="systems">
+          <div class="project-topline"><span>01 / SYSTEMS</span><span class="project-icon" aria-hidden="true">⌘</span></div>
+          <div class="project-illustration kv-illustration" aria-hidden="true">
+            <div class="server-stack"><span></span><span></span><span></span></div>
+            <div class="signal signal-one"></div><div class="signal signal-two"></div>
+            <span class="illustration-label">CONSENSUS · REPLICATION · RESILIENCE</span>
+          </div>
+          <div class="project-copy">
+            <h3>Distributed KV Store</h3>
+            <p>A fault-tolerant key-value store in Go, using Raft consensus to explore high availability and partition tolerance.</p>
+            <ul class="tag-list" aria-label="Technologies"><li>Go</li><li>Raft</li><li>RPC</li></ul>
+            <a class="project-link" href="https://github.com/search?q=Distributed+KV+Store+Raft&type=repositories" target="_blank" rel="noreferrer">Explore related repositories <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="project-card project-card-peach" data-category="language-tools">
+          <div class="project-topline"><span>02 / LANGUAGE TOOLS</span><span class="project-icon" aria-hidden="true">&lt;/&gt;</span></div>
+          <div class="project-illustration compiler-illustration" aria-hidden="true">
+            <div class="code-window"><span class="window-dots">● ● ●</span><span class="code-line"><b>if</b> (token) {</span><span class="code-line indent">parse(expression);</span><span class="code-line">}</span><span class="code-cursor"></span></div>
+            <div class="tree-node tree-root"></div><div class="tree-node tree-left"></div><div class="tree-node tree-right"></div>
+            <span class="illustration-label">SOURCE → SYNTAX TREE</span>
+          </div>
+          <div class="project-copy">
+            <h3>Compiler Frontend</h3>
+            <p>A from-scratch lexer and parser for a subset of C, generating abstract syntax trees and performing basic semantic analysis.</p>
+            <ul class="tag-list" aria-label="Technologies"><li>C++</li><li>Flex / Bison</li><li>AST</li></ul>
+            <a class="project-link" href="https://github.com/search?q=compiler+frontend+C%2B%2B+Flex+Bison&type=repositories" target="_blank" rel="noreferrer">Explore related repositories <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="project-card project-card-mint" data-category="frontend">
+          <div class="project-topline"><span>03 / FRONTEND</span><span class="project-icon" aria-hidden="true">☑</span></div>
+          <div class="project-illustration todo-illustration" aria-hidden="true">
+            <div class="todo-preview">
+              <span class="todo-preview-title">TODAY'S TASKS</span>
+              <span class="todo-row"><i class="todo-check"></i><i></i></span>
+              <span class="todo-row"><i class="todo-check done"></i><i></i></span>
+              <span class="todo-row"><i class="todo-check"></i><i></i></span>
+            </div>
+            <span class="illustration-label">PLAN · DO · DONE</span>
+          </div>
+          <div class="project-copy">
+            <h3>Daily Task Tracker</h3>
+            <p>A simple browser-based to-do list for adding, completing, and removing daily tasks, built with HTML, CSS, and JavaScript.</p>
+            <ul class="tag-list" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a class="project-link" href="https://github.com/search?q=todo+list+HTML+CSS+JavaScript&type=repositories" target="_blank" rel="noreferrer">Explore related repositories <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="section-wrap about-grid">
+        <div class="about-title">
+          <p class="eyebrow">A BIT ABOUT ME <span class="eyebrow-divider">/</span> 02</p>
+          <h2 id="about-title">I like understanding the <span>why</span> behind the build.</h2>
+        </div>
+        <div class="about-copy">
+          <p>I approach software engineering as digital architecture. I care about building systems that are not only functional, but robust, scalable, and thoughtfully structured.</p>
+          <p>As a computer science student, I’m especially interested in backend infrastructure and distributed systems. Clean code and strong fundamentals are how I make software easier to trust and maintain.</p>
+          <a class="text-link" href="#skills">See what I work with <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap approach-section" aria-labelledby="approach-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">HOW I LIKE TO BUILD <span class="eyebrow-divider">/</span> 03</p><h2 id="approach-title">Good work starts with good questions.</h2></div>
+        <p class="section-aside">A thoughtful process turns solid fundamentals into software people can rely on.</p>
+      </div>
+      <div class="approach-grid">
+        <article class="approach-card">
+          <span class="approach-number">01</span>
+          <span class="approach-icon" aria-hidden="true">⌕</span>
+          <h3>Understand the problem</h3>
+          <p>Get clear on the goal, the constraints, and the details that matter before reaching for a solution.</p>
+          <span class="approach-caption">ASK · EXPLORE · CLARIFY</span>
+        </article>
+        <article class="approach-card">
+          <span class="approach-number">02</span>
+          <span class="approach-icon" aria-hidden="true">⌘</span>
+          <h3>Build with structure</h3>
+          <p>Keep the design easy to follow, lean on strong fundamentals, and make each part do its job well.</p>
+          <span class="approach-caption">DESIGN · ORGANIZE · BUILD</span>
+        </article>
+        <article class="approach-card">
+          <span class="approach-number">03</span>
+          <span class="approach-icon" aria-hidden="true">↗</span>
+          <h3>Refine with care</h3>
+          <p>Check the edge cases, learn from what happens, and make the result more reliable one iteration at a time.</p>
+          <span class="approach-caption">TEST · LEARN · IMPROVE</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">TOOLS OF THE TRADE <span class="eyebrow-divider">/</span> 04</p><h2 id="skills-title">My technical toolkit.</h2></div>
+        <p class="section-aside">The building blocks I reach for to turn ideas into reliable software.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-number">01</span><h3>Languages &amp; web</h3><ul class="tag-list"><li>Python</li><li>C / C++</li><li>Go</li><li>TypeScript</li><li>Java</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article>
+        <article class="skill-card"><span class="skill-number">02</span><h3>Tools &amp; infrastructure</h3><ul class="tag-list"><li>Docker</li><li>Kubernetes</li><li>Linux / Unix</li><li>Git</li><li>AWS</li></ul></article>
+        <article class="skill-card"><span class="skill-number">03</span><h3>Areas of interest</h3><ul class="tag-list"><li>Distributed systems</li><li>OS internals</li><li>Data structures</li><li>Algorithms</li><li>Database design</li></ul></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <div class="section-wrap contact-inner">
+        <p class="eyebrow">HAVE A GOOD ONE IN MIND? <span class="eyebrow-divider">/</span> 05</p>
+        <h2 id="contact-title">Let’s make something<br><span>meaningful.</span></h2>
+        <p>I’m always glad to connect, talk through an idea, or hear about an interesting opportunity.</p>
+        <a class="button button-light" href="mailto:?subject=Hello%20Shatabdee">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-wrap footer-inner">
+      <a class="brand footer-brand" href="#top"><img class="brand-photo" src="images/shatabdee-profile.jpeg" alt=""><span>Shatabdee Paul</span></a>
+      <p>Made with care <span aria-hidden="true">✳</span> © 2026</p>
+      <nav aria-label="Social links" class="footer-links">
+        <a href="https://github.com/search?q=Shatabdee+Paul&type=users" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/search/results/people/?keywords=Shatabdee%20Paul" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/search?q=Shatabdee+Paul&type=repositories" target="_blank" rel="noreferrer">Source code <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </footer>
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+  <script>
+    const filterGroup = document.querySelector(".project-filters");
+    const filterButtons = filterGroup.querySelectorAll("[data-filter]");
+    const projectCards = document.querySelectorAll(".project-card");
+    const filterStatus = document.querySelector("#project-filter-status");
+
+    filterGroup.hidden = false;
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedFilter = button.dataset.filter;
+        let visibleCount = 0;
+
+        projectCards.forEach((card) => {
+          const isVisible = selectedFilter === "all" || card.dataset.category === selectedFilter;
+          card.hidden = !isVisible;
+          visibleCount += Number(isVisible);
+        });
+
+        filterButtons.forEach((filterButton) => {
+          const isSelected = filterButton === button;
+          filterButton.setAttribute("aria-pressed", String(isSelected));
+          filterButton.classList.toggle("is-active", isSelected);
+        });
+
+        filterStatus.textContent = `${visibleCount} ${visibleCount === 1 ? "project" : "projects"} shown`;
+      });
+    });
+  </script>
+</body>
+</html>
