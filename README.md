@@ -14,7 +14,7 @@ Open `index.html` in a browser. The portfolio does not require a build step or p
 
 ## Deploy to GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` publishes the site when changes are pushed to the `main` branch. In the repository settings, enable GitHub Pages with **GitHub Actions** as the build and deployment source if it is not already enabled.
+The workflow in `.github/workflows/pages.yml` enables GitHub Pages and publishes the site when changes are pushed to the `main` branch.
 
 ## Customize
 
