@@ -2,6 +2,10 @@
 
 A responsive personal portfolio built with semantic HTML and custom CSS. It features a profile photo, project cards with category filters, an about section, technical skills, and contact links.
 
+## Live site
+
+https://pritom099.github.io/Portfolio/
+
 ## Run locally
 
 Open `index.html` in a browser. The portfolio does not require a build step or package installation.
