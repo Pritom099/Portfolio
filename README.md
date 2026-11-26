@@ -18,7 +18,7 @@ A personal portfolio highlighting my computer science studies, interests in back
 
 - **Library Management System** — a project focused on organizing and managing library resources
 - **Personal Portfolio** — this responsive portfolio, built with HTML, CSS, and JavaScript ([visit the live site](https://my-portfolio-one-iota-51.vercel.app/))
-- **Daily Task Tracker** — a browser-based to-do list built with HTML, CSS, and JavaScript
+- **Smart Canteen** — a live canteen web project ([visit the site](https://smart-canteen-lake.vercel.app/))
 
 ## Built with
 

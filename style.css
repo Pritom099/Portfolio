@@ -148,6 +148,15 @@ h1, h2 { font-family: var(--display); letter-spacing: -.055em; }
 .todo-illustration { background: linear-gradient(135deg, #1d2925, #24332e 58%, #1b2622); }
 .library-illustration { background: linear-gradient(135deg, #211d2b, #2d2431 58%, #211d27); }
 .portfolio-illustration { background: linear-gradient(135deg, #29201f, #302421 58%, #241c1c); }
+.canteen-illustration { background: linear-gradient(135deg, #1d2925, #24332e 58%, #1b2622); }
+.canteen-preview { position: relative; z-index: 1; width: 230px; padding: 18px; border: 1px solid #b6d8c644; background: #19211eee; box-shadow: 0 15px 40px #0b100e66; transform: rotate(-3deg); }
+.canteen-preview-title { display: block; margin-bottom: 12px; color: #b6d8c6; font: 9px var(--mono); letter-spacing: .13em; }
+.canteen-preview-row { display: flex; align-items: center; gap: 9px; height: 27px; border-top: 1px solid #ffffff12; }
+.canteen-preview-row i { width: 13px; height: 13px; flex: 0 0 13px; border-radius: 50%; background: #f2a8c077; }
+.canteen-preview-row:nth-child(3) i { background: #b7d6a5aa; }
+.canteen-preview-row:nth-child(4) i { background: #f4c3a7aa; }
+.canteen-preview-row b { width: 64%; height: 4px; background: #b6d8c655; }
+.canteen-preview-row em { width: 15px; height: 4px; margin-left: auto; background: #b6d8c699; }
 .library-preview { position: relative; z-index: 1; width: 230px; padding: 18px; border: 1px solid #c3b6ef44; background: #1b1821ed; box-shadow: 0 15px 40px #09070c70; transform: rotate(-3deg); }
 .library-preview-title { display: block; margin-bottom: 16px; color: #c3b6ef; font: 9px var(--mono); letter-spacing: .13em; }
 .library-books { height: 47px; display: flex; align-items: end; gap: 5px; padding: 0 6px; }
