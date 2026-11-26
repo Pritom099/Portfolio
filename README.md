@@ -9,15 +9,16 @@ A personal portfolio highlighting my computer science studies, interests in back
 - Responsive layout for desktop, tablet, and mobile
 - Profile photo and introductory hero section
 - Project cards with category filters
-- About, technical skills, and build approach sections
+- About, education, technical skills, and build approach sections
+- Persistent Light/Dark mode
 - Mobile navigation and accessible in-page links
 - GitHub Pages deployment through GitHub Actions
 
 ## Featured projects
 
-- **Distributed KV Store** — a Go key-value store exploring Raft consensus and fault tolerance
-- **Compiler Frontend** — a C++ lexer and parser that generates abstract syntax trees
-- **Daily Task Tracker** — a small browser-based to-do list built with HTML, CSS, and JavaScript
+- **Library Management System** — a project focused on organizing and managing library resources
+- **Personal Portfolio** — this responsive portfolio, built with HTML, CSS, and JavaScript ([visit the live site](https://pritom099.github.io/Portfolio/))
+- **Daily Task Tracker** — a browser-based to-do list built with HTML, CSS, and JavaScript
 
 ## Built with
 
