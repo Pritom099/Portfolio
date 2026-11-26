@@ -2,7 +2,7 @@
 
 A personal portfolio highlighting my computer science studies, interests in backend engineering, and selected software projects.
 
-**Live site:** [pritom099.github.io/Portfolio](https://pritom099.github.io/Portfolio/)
+**Live site:** [my-portfolio-one-iota-51.vercel.app](https://my-portfolio-one-iota-51.vercel.app/)
 
 ## Features
 
@@ -17,7 +17,7 @@ A personal portfolio highlighting my computer science studies, interests in back
 ## Featured projects
 
 - **Library Management System** — a project focused on organizing and managing library resources
-- **Personal Portfolio** — this responsive portfolio, built with HTML, CSS, and JavaScript ([visit the live site](https://pritom099.github.io/Portfolio/))
+- **Personal Portfolio** — this responsive portfolio, built with HTML, CSS, and JavaScript ([visit the live site](https://my-portfolio-one-iota-51.vercel.app/))
 - **Daily Task Tracker** — a browser-based to-do list built with HTML, CSS, and JavaScript
 
 ## Built with
